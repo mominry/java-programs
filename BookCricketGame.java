@@ -15,9 +15,13 @@ public class BookCricketGame {
 		int round=0;
 		int choice=0;
 		int bookPage=0;
+		boolean flag=true;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter 1 to start game and zero to exit");
 		choice=sc.nextInt();
+		
+		while(flag!=false)
+		{
 		if(choice==1)
 		{
 		System.out.println("enter player1 name:  ");
@@ -132,141 +136,15 @@ public class BookCricketGame {
 		}
 		else if(choice==0) {
 			//exit;
+			flag=false;
 		}
 		else
 		{
 			System.out.println("enter only 0 or 1");
 		}
-		
+		}
 	}
 
 }
 
 
-/*
-
-enter 1 to start game and zero to exit
-1
-enter player1 name:  
-rayyan
-enter player2 name:  
-mark
-player 1rayyan
-enter 1 to open book
-1
-page number:208     point:5     score:5
-enter 1 to open book
-1
-page number:159     point:5     score:10
-enter 1 to open book
-1
-page number:177     point:2     score:12
-enter 1 to open book
-1
-page number:59     point:3     score:15
-enter 1 to open book
-1
-page number:261     point:2     score:17
-enter 1 to open book
-1
-page number:262     point:3     score:20
-enter 1 to open book
-1
-page number:213     point:3     score:23
-enter 1 to open book
-1
-page number:142     point:2     score:25
-enter 1 to open book
-1
-page number:229     point:5     score:30
-enter 1 to open book
-1
-page number:19     point:5     score:35
-enter 1 to open book
-1
-page number:223     point:6     score:41
-enter 1 to open book
-1
-page number:267     point:1     score:42
-enter 1 to open book
-1
-page number:110     point:5     score:47
-enter 1 to open book
-1
-page number:193     point:4     score:51
-enter 1 to open book
-1
-page number:241     point:3     score:54
-enter 1 to open book
-1
-page number:269     point:3     score:57
-enter 1 to open book
-1
-page number:8     point:1     score:58
-enter 1 to open book
-1
-page number:283     point:3     score:61
-enter 1 to open book
-1
-page number:298     point:4     score:65
-enter 1 to open book
-1
-page number:209     point:6     score:71
-enter 1 to open book
-
-1
-page number:267     point:1     score:72
-enter 1 to open book
-1
-page number:285     point:5     score:77
-enter 1 to open book
-1
-page number:36     point:1     score:78
-enter 1 to open book
-1
-page number:103     point:5     score:83
-enter 1 to open book
-1
-page number:56     point:0     score:83
-markneeds more than83to win the round
-enter 1 to open book
-1
-page number: 156     point: 2     score: 2     round left: 24
-enter 1 to open book
-1
-page number: 248     point: 3     score: 5     round left: 23
-enter 1 to open book
-1
-page number: 66     point: 3     score: 8     round left: 22
-enter 1 to open book
-1
-page number: 180     point: 5     score: 13     round left: 21
-enter 1 to open book
-1
-page number: 92     point: 1     score: 14     round left: 20
-enter 1 to open book
-1
-page number: 233     point: 2     score: 16     round left: 19
-enter 1 to open book
-1
-page number: 206     point: 3     score: 19     round left: 18
-enter 1 to open book
-1
-page number: 254     point: 2     score: 21     round left: 17
-enter 1 to open book
-1
-page number: 269     point: 3     score: 24     round left: 16
-enter 1 to open book
-1
---------------oops------------------
-page number: 280     point: 0     score: 24
-total score24round l 15
-rayyanwin Match!!!
-
-
-
-
-
-
-
-*/
